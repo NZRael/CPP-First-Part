@@ -6,7 +6,7 @@
 /*   By: sboetti <sboetti@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 13:33:42 by sboetti           #+#    #+#             */
-/*   Updated: 2024/02/13 15:21:06 by sboetti          ###   ########.fr       */
+/*   Updated: 2024/02/14 14:53:02 by sboetti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,5 @@ public:
 	~ScavTrap();
 	
 	void	guardGate();
+	void	attack(const std::string & target);
 };

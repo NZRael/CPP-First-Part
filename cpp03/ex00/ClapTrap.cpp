@@ -6,28 +6,27 @@
 /*   By: sboetti <sboetti@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/09 18:36:28 by sboetti           #+#    #+#             */
-/*   Updated: 2024/02/12 12:38:54 by sboetti          ###   ########.fr       */
+/*   Updated: 2024/02/14 15:04:48 by sboetti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap(void) : _name("Default"), _health(10), _energy(10), _attacks(0){
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "Default ClapTrap constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name) : _name(name), _health(10), _energy(10), _attacks(0){
-	std::cout << "Constructor surcharged called" << std::endl;
+	std::cout << "Constructor ClapTrap surcharged called" << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap const & cpy) {
-	std::cout << "Copy constructor called." << std::endl;
+	std::cout << "ClapTrap Copy constructor called." << std::endl;
 	*this = cpy;
 	return ;
 }
 
 ClapTrap	&ClapTrap::operator=( ClapTrap const & rhs){
-	std::cout << "Copy assignment operator called." << std::endl;
 	this->_name = rhs._name;
 	this->_health = rhs._health;
 	this->_energy = rhs._energy;
@@ -36,7 +35,7 @@ ClapTrap	&ClapTrap::operator=( ClapTrap const & rhs){
 }
 
 ClapTrap::~ClapTrap(){
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "ClapTrap Destructor called" << std::endl;
 }
 
 void	ClapTrap::attack(const std::string & target){

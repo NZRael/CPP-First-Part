@@ -6,14 +6,14 @@
 /*   By: sboetti <sboetti@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 15:10:29 by sboetti           #+#    #+#             */
-/*   Updated: 2024/02/13 15:21:17 by sboetti          ###   ########.fr       */
+/*   Updated: 2024/02/14 15:02:41 by sboetti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
 FragTrap::FragTrap() : ClapTrap(){
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "Default FragTrap constructor called" << std::endl;
 	this->_health = 100;
 	this->_energy = 100;
 	this->_attacks = 30;
@@ -21,7 +21,7 @@ FragTrap::FragTrap() : ClapTrap(){
 }
 
 FragTrap::FragTrap(std::string name) : ClapTrap(name){
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "FragTrap constructor surcharged called" << std::endl;
 	this->_health = 100;
 	this->_energy = 100;
 	this->_attacks = 30;
@@ -29,10 +29,12 @@ FragTrap::FragTrap(std::string name) : ClapTrap(name){
 }
 
 FragTrap::FragTrap(const FragTrap & cpy) : ClapTrap(cpy){
+	std::cout << "FragTrap Copy constructor called." << std::endl;
 	return ;
 }
 
 FragTrap::~FragTrap(void){
+	std::cout << "FragTrap Destructor called" << std::endl;
 	return ;
 }
 
