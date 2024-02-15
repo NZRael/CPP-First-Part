@@ -6,7 +6,7 @@
 /*   By: sboetti <sboetti@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 10:18:22 by sboetti           #+#    #+#             */
-/*   Updated: 2024/02/13 15:22:39 by sboetti          ###   ########.fr       */
+/*   Updated: 2024/02/15 13:18:21 by sboetti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ Dog::Dog() : Animal(), _brain(new Brain){
 	_type = "Dog";
 }
 
-Dog::Dog(const Dog & cpy) : Animal(cpy){
+Dog::Dog(const Dog & cpy) : Animal(cpy), _brain(new Brain(*cpy._brain)){
 	std::cout << "Dog Copy constructor called" << std::endl;
 	*this = cpy;
 }

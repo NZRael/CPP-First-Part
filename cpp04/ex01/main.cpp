@@ -6,7 +6,7 @@
 /*   By: sboetti <sboetti@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 09:45:21 by sboetti           #+#    #+#             */
-/*   Updated: 2024/02/13 15:22:44 by sboetti          ###   ########.fr       */
+/*   Updated: 2024/02/15 13:15:21 by sboetti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,9 +96,4 @@ int main( void )
 
 	std::cout << YELLOW << "----- Destruct----- " << RESET << std::endl;
 	return	0;
-}
-
-__attribute((destructor))
-static void destructor() {
-	system("leaks -q main");
 }

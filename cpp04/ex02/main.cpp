@@ -6,7 +6,7 @@
 /*   By: sboetti <sboetti@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 09:45:21 by sboetti           #+#    #+#             */
-/*   Updated: 2024/02/13 15:23:14 by sboetti          ###   ########.fr       */
+/*   Updated: 2024/02/15 13:12:37 by sboetti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,4 @@ int main( void )
 	delete	j;
 	delete	i;
 	return	0;
-}
-
-__attribute((destructor))
-static void destructor() {
-	system("leaks -q main");
 }
