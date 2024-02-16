@@ -6,20 +6,13 @@
 /*   By: sboetti <sboetti@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 10:05:11 by sboetti           #+#    #+#             */
-/*   Updated: 2024/02/15 13:07:11 by sboetti          ###   ########.fr       */
+/*   Updated: 2024/02/16 09:50:02 by sboetti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
 #include <iostream>
-#include <cstdlib>
-
-// # define RED		"\e[0;31m" // Red
-// # define GREEN	"\e[0;32m" // Green
-// # define YELLOW	"\e[0;33m" // Yellow
-// # define BLUE	"\e[0;34m" // Blue
-// # define RESET 	"\e[0m"    // Reset
 
 #define RED     "\033[0;31m" // Red
 #define GREEN   "\033[0;32m" // Green

@@ -6,7 +6,7 @@
 /*   By: sboetti <sboetti@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 09:45:21 by sboetti           #+#    #+#             */
-/*   Updated: 2024/02/15 13:12:37 by sboetti          ###   ########.fr       */
+/*   Updated: 2024/02/16 09:52:10 by sboetti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@ int main( void )
 	RESET << std::endl;
 
 	std::cout << GREEN << "----- Constract----- " << RESET << std::endl;
-	// const AAnimal* meta = new AAnimal();
+	// const AAnimal* meta = new AAnimal(); 								car classe abstraite donc pas d'inctance
 	const AAnimal* j = new Dog();
 	const AAnimal* i = new Cat();
-	// std::cout << meta->getType() << " " << std::endl;
+	// std::cout << meta->getType() << " " << std::endl; 					car classe abstraite donc pas d'inctance
 	std::cout << j->getType() << " " << std::endl;
 	std::cout << i->getType() << " " << std::endl;
-    // meta->makeSound();
+    // meta->makeSound(); 													car classe abstraite donc pas d'inctance
 	j->makeSound();
 	i->makeSound();
 
