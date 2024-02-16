@@ -6,7 +6,7 @@
 /*   By: sboetti <sboetti@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 10:50:59 by sboetti           #+#    #+#             */
-/*   Updated: 2024/02/13 15:22:18 by sboetti          ###   ########.fr       */
+/*   Updated: 2024/02/16 11:36:51 by sboetti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ public:
 	WrongAnimal();
 	WrongAnimal(const WrongAnimal & cpy);
 	WrongAnimal & operator=(WrongAnimal const & rhs);
-	~WrongAnimal();
+	virtual	~WrongAnimal();
 	
 	std::string	getType(void) const;
 	void	makeSound(void) const;
