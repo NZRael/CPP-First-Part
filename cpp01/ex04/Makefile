@@ -14,10 +14,10 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(FLAGS) $(OBJ) -o $(NAME)
 
-clean:
+clean :
 	$(RM) $(OBJ)
 
-fclean: clean
+fclean : clean
 	$(RM) $(NAME)
 
 re: fclean all

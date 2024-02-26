@@ -38,16 +38,14 @@ int	main(int argc, char **argv)
 	std::string	line;
 	while (std::getline(file >> std::ws, line))
 	{
-		size_t		pos = 0;
+		size_t		pos = line.find(s1);
 		while (pos != std::string::npos)
 		{
-			pos = line.find(s1);
-			if (pos == std::string::npos)
-				break;
 			line.erase(pos, s1.length());
 			line.insert(pos, s2);
+			pos = line.find(s1, pos + s2.length());
 		}
-		outfile << line;
+		outfile << line << "\n";
 	}
 	return (0);
 }
